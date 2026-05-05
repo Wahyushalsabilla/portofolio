@@ -1,7 +1,6 @@
-<template>
+<!-- <template>
   <section id="gallery" class="py-28 lg:py-36 bg-snow relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 lg:px-12">
-      <!-- Section label -->
       <div class="section-rule reveal">
         <span class="text-xs font-sans font-medium tracking-[0.2em] uppercase text-smoke">05 — Gallery</span>
       </div>
@@ -11,7 +10,6 @@
           Design<br /><em>Moments</em>
         </h2>
 
-        <!-- Navigation arrows -->
         <div class="flex items-center gap-3 reveal reveal-delay-1">
           <button
             @click="prev"
@@ -37,7 +35,6 @@
         </div>
       </div>
 
-      <!-- Carousel track -->
       <div
         class="relative overflow-hidden rounded-3xl reveal reveal-delay-1"
         ref="track"
@@ -58,7 +55,7 @@
               class="relative h-80 lg:h-[500px] rounded-3xl overflow-hidden border border-pearl shadow-2xl shadow-ink/10"
               :style="{ background: slide.bg }"
             >
-              <!-- Placeholder content -->
+
               <div class="absolute inset-0 flex flex-col items-center justify-center gap-4">
                 <div
                   class="w-20 h-20 rounded-2xl border border-white/20 flex items-center justify-center"
@@ -76,7 +73,6 @@
                 <p class="text-xs font-sans text-white/40 mt-2">Replace with your actual screenshot</p>
               </div>
 
-              <!-- Slide overlay info -->
               <div class="absolute bottom-0 left-0 right-0 p-8" style="background: linear-gradient(transparent, rgba(0,0,0,0.4));">
                 <span class="text-xs font-sans text-white/50 uppercase tracking-widest">{{ slide.tag }}</span>
               </div>
@@ -85,7 +81,6 @@
         </div>
       </div>
 
-      <!-- Pagination dots -->
       <div class="flex items-center justify-center gap-2 mt-6 reveal reveal-delay-2">
         <button
           v-for="(_, i) in slides"
@@ -97,7 +92,6 @@
         />
       </div>
 
-      <!-- Thumbnail strip -->
       <div class="flex gap-3 mt-8 overflow-x-auto pb-2 reveal reveal-delay-2 scrollbar-none">
         <button
           v-for="(slide, i) in slides"
@@ -216,4 +210,4 @@ onUnmounted(() => {
 .scrollbar-none {
   scrollbar-width: none;
 }
-</style>
+</style> -->

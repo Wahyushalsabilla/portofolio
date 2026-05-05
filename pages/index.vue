@@ -5,7 +5,7 @@
     <ExperienceSection />
     <SkillsSection />
     <ProjectsSection />
-    <ImageCarousel />
+    <!-- <ImageCarousel /> -->
     <ContactSection />
   </main>
 </template>
