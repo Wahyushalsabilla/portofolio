@@ -136,7 +136,7 @@
               class="absolute -right-6 bottom-14 glass-card rounded-2xl px-4 py-3 shadow-lg"
             >
               <p class="text-xs text-smoke font-sans">Experience</p>
-              <p class="font-display text-2xl font-medium text-ink">5 Roles</p>
+              <p class="font-display text-2xl font-medium text-ink">3 Roles</p>
             </div>
           </div>
         </div>

@@ -79,7 +79,7 @@
   </header>
 </template>
 
-<script setup>
+<script setup> 
 const scrolled = ref(false)
 const menuOpen = ref(false)
 

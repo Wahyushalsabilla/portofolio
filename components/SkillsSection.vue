@@ -114,7 +114,8 @@ const skillCategories = [
 ]
 
 const additionalTools = [
-  'React', 'JavaScript ES6+', 'Adobe XD', 'Postman', 'Bootstrap',
-  'SCSS', 'Vite', 'VS Code', 'Linux', 'Notion',
+  'React', 'GitLab', 'Postman', 'Bootstrap',
+  'SCSS', 'Vite', 'VS Code', 'Notion', 'Canva', 'PicsArt', 
+  'CapCut'
 ]
 </script>

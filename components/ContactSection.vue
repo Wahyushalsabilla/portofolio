@@ -35,7 +35,10 @@
               class="flex items-center gap-4 p-4 rounded-2xl border border-pearl hover:border-ink transition-all duration-300 group hover:shadow-md hover:-translate-y-0.5"
             >
               <div class="w-10 h-10 rounded-xl bg-snow border border-pearl flex items-center justify-center shrink-0 group-hover:bg-ink group-hover:border-ink transition-all duration-300">
-                <span class="text-base group-hover:grayscale" style="filter: none;">{{ contact.icon }}</span>
+                <component
+                  :is="contact.icon"
+                  class="w-5 h-5 text-ink group-hover:text-white transition"
+                />
               </div>
               <div>
                 <p class="text-xs text-mist font-sans uppercase tracking-wider">{{ contact.label }}</p>
@@ -59,7 +62,7 @@
                 <input
                   v-model="form.name"
                   type="text"
-                  placeholder="Jane Smith"
+                  placeholder="Your Name"
                   required
                   class="w-full px-4 py-3.5 rounded-xl border border-pearl bg-snow font-sans text-sm text-ink placeholder-mist focus:outline-none focus:border-ink transition-colors duration-200"
                 />
@@ -70,7 +73,7 @@
                 <input
                   v-model="form.email"
                   type="email"
-                  placeholder="jane@example.com"
+                  placeholder="youremail@example.com"
                   required
                   class="w-full px-4 py-3.5 rounded-xl border border-pearl bg-snow font-sans text-sm text-ink placeholder-mist focus:outline-none focus:border-ink transition-colors duration-200"
                 />
@@ -121,6 +124,44 @@
 </template>
 
 <script setup>
+import { Mail, Briefcase, MapPin } from 'lucide-vue-next'
+import emailjs from '@emailjs/browser'
+
+const config = useRuntimeConfig()
+
+const handleSubmit = async () => {
+  try {
+    await emailjs.send(
+      config.public.emailjsServiceId,
+      config.public.emailjsTemplateId,
+      {
+        from_name: form.name,
+        from_email: form.email,
+        subject: form.subject,
+        message: form.message,
+      },
+      {
+        publicKey: config.public.emailjsPublicKey,
+      }
+    )
+
+    submitted.value = true
+
+    Object.assign(form, {
+      name: '',
+      email: '',
+      subject: '',
+      message: '',
+    })
+
+    setTimeout(() => {
+      submitted.value = false
+    }, 4000)
+  } catch (error) {
+    console.error(error)
+    alert('Failed to send message.')
+  }
+}
 const form = reactive({
   name: '',
   email: '',
@@ -131,36 +172,25 @@ const submitted = ref(false)
 
 const contactLinks = [
   {
-    icon: '✉️',
+    icon: Mail,
     label: 'Email',
     value: 'shalsabillawahyuar@gmail.com',
     href: 'mailto:shalsabillawahyuar@gmail.com',
     external: false,
   },
   {
-    icon: '💼',
+    icon: Briefcase,
     label: 'LinkedIn',
     value: 'shalsabilla-wahyu-5304692a9',
     href: 'https://www.linkedin.com/in/shalsabilla-wahyu-5304692a9/',
     external: true,
   },
   {
-    icon: '📍',
+    icon: MapPin,
     label: 'Location',
     value: 'Surabaya, East Java, Indonesia',
-    href: '#',
     external: false,
   },
 ]
 
-const handleSubmit = () => {
-  // Open mailto as fallback
-  const mailtoLink = `mailto:shalsabillawahyuar@gmail.com?subject=${encodeURIComponent(form.subject || 'Portfolio Inquiry')}&body=${encodeURIComponent(`Name: ${form.name}\n\n${form.message}`)}`
-  window.open(mailtoLink)
-  submitted.value = true
-  setTimeout(() => {
-    submitted.value = false
-    Object.assign(form, { name: '', email: '', subject: '', message: '' })
-  }, 4000)
-}
 </script>

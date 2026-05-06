@@ -99,8 +99,8 @@ const experiences = [
     period: 'Jan 2026 — Present',
     type: 'Internship',
     description:
-      'Developed responsive web applications using Nuxt.js (Vue). Implemented key features such as dashboards, learning progress tracking, and user authentication. Integrated REST APIs and handled state management (loading, error) to ensure a smooth user experience. Collaborated in an agile team using Git and sprint-based workflows.',
-    tags: ['Vue.js', 'Nuxt.js', 'Tailwind CSS', 'REST API', 'Git'],
+      'Built and enhanced responsive web features for an education platform using Nuxt.js (Vue), including dashboards, student learning progress, and registration/verification flows. Integrated RESTful APIs and implemented structured state management to improve user experience and data consistency. Actively collaborated in an agile team, contributing through Git-based workflows and sprint iterations.',
+    tags: ['Vue.js', 'Nuxt.js', 'Tailwind CSS', 'REST API', 'Git', 'shadcn'],
   },
   {
     role: 'Front-End Developer / Manager',
@@ -108,8 +108,8 @@ const experiences = [
     period: 'Aug 2025 — Dec 2025',
     type: 'Internship',
     description:
-      'Led and contributed to frontend development of the Elevacourse AI learning platform. Managed team tasks, conducted code reviews, and ensured UI consistency. Collaborated with cross-functional teams to align design and system performance.',
-    tags: ['Vue.js', 'Leadership', 'Project Management', 'UI Development'],
+      'Designed user interfaces for the Elevacourse AI learning platform, focusing on clean, intuitive, and visually consistent UI. Contributed to frontend implementation by translating designs into code using Vue-based frameworks. Collaborated with developers to ensure design feasibility and alignment with system functionality.',
+    tags: ['Next.js', 'Figma','Leadership', 'Project Management', 'UI Development'],
   },
   {
     role: 'Graphic Designer',
@@ -118,7 +118,7 @@ const experiences = [
     type: 'Professional',
     description:
       'Designed educational and storytelling-based visual content for social media. Created Instagram carousel designs aligned with brand guidelines and improved audience engagement through visually compelling content.',
-    tags: ['Canva', 'Figma', 'Brand Design', 'Social Media'],
+    tags: ['Canva', 'Brand Design', 'Social Media'],
   },
   {
     role: 'UI/UX Designer',

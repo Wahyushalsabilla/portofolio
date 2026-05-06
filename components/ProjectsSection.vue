@@ -136,18 +136,18 @@ onBeforeUnmount(() => {
 const projects = [
   {
     title: 'TimeToCode',
-    category: 'Web App · Game',
+    category: 'Educational Game · Gamified Learning',
     description:
-      'A story-based coding game designed to make learning programming engaging and accessible. Players solve coding challenges through narrative-driven levels, turning education into an interactive experience.',
-    tech: ['Vue.js', 'Nuxt', 'Tailwind CSS', 'JavaScript', 'Gamification'],
+      'An interactive programming learning game that combines branching storytelling, coding challenges, and strategic minigames to make computer science concepts more engaging for beginners. Players learn through narrative-driven gameplay, logic puzzles, code simulations, and multiplayer logic gate battles.',
+    tech: ['Flutter','Dart', 'JavaScript', 'Gamification'],
     images: [timeToCode1, timeToCode2],
   },
-    {
+  {
     title: 'EduGrow',
-    category: 'Learning Platform',
+    category: 'Monitoring System · Web Platform',
     description:
-      'A web-based learning platform focused on personal and academic growth. Designed with readable layouts, course progression, and a distraction-free learning experience.',
-    tech: ['Vue.js', 'Laravel', 'MySQL', 'Tailwind CSS'],
+      'A multi-role web platform for monitoring early childhood development, including student management, growth tracking, scheduling, and activity documentation.',
+    tech: ['Nuxt', 'Laravel', 'MySQL', 'REST API', 'Tailwind CSS'],
     images: [eduGrow1, eduGrow2, eduGrow3, eduGrow4, eduGrow5, eduGrow6],
   },
   {
@@ -155,7 +155,7 @@ const projects = [
     category: 'AI Platform',
     description:
       'An AI-powered learning platform built for Elevated Indonesia. It features a clean dashboard experience, intuitive course flow, and adaptive learning-oriented interface.',
-    tech: ['Vue.js', 'Nuxt', 'AI Integration', 'REST API'],
+    tech: ['Vue.js', 'Next', 'AI Integration', 'REST API'],
     images: [elevacourse1, elevacourse2, elevacourse3],
   },
   {

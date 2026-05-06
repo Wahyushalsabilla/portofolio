@@ -106,7 +106,7 @@ const details = [
 
 const stats = [
   { number: '5+', label: 'Projects' },
-  { number: '5', label: 'Roles Held' },
+  { number: '3', label: 'Roles Held' },
   { number: '3+', label: 'Years Study' },
 ]
 </script>
