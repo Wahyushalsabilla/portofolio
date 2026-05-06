@@ -19,11 +19,11 @@
           </h2>
 
           <p class="font-sans text-base text-smoke leading-relaxed mb-6 reveal reveal-delay-1">
-            I am an Informatics Engineering student with a deep passion for the intersection of visual design and frontend development. I believe that great digital products are born when aesthetics and functionality work in perfect harmony.
+            I'm somewhere between a designer and a developer — an Informatics student who spends too much time thinking about color palettes and component structure at the same time. I've worked on UI/UX, graphic design, and frontend projects, and I enjoy turning ideas into interfaces that feel both functional and visually thoughtful.
           </p>
 
           <p class="font-sans text-base text-smoke leading-relaxed mb-10 reveal reveal-delay-2">
-            With experience spanning UI/UX design, graphic design, and frontend engineering, I bring a holistic perspective to every project — from initial wireframes to production-ready interfaces.
+            I'm still learning and exploring new things along the way, but I genuinely enjoy collaborating with people, sharing ideas, and growing through every project I work on.
           </p>
 
           <!-- Values / traits -->
