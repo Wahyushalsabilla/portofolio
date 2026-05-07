@@ -1,127 +1,51 @@
 # Shalsabilla Wahyu — Portfolio
+---
 
-A modern, premium portfolio website built with **Nuxt 3** and **Tailwind CSS**.
+## ✨ Highlights
 
-## ✨ Features
-- Monochrome design (black, white, gray only)
-- Custom cursor with hover effects
-- Smooth scroll reveal animations
-- Responsive: desktop, tablet, mobile
-- Image carousel with swipe, dots & thumbnails
-- Glassmorphism effects
-- Cormorant Garamond + DM Sans typography pair
-- Vertical timeline for experience
-- No progress bars — skill categories with descriptions
+- Elegant monochrome visual system
+- Smooth scroll-based reveal animations
+- Interactive custom cursor
+- Glassmorphism layered interface
+- Fully responsive across desktop, tablet, and mobile
+- Swipe-enabled image carousel with thumbnails & indicators
+- Refined typography pairing:
+  - Cormorant Garamond
+  - DM Sans
+- Vertical experience timeline
+- Clean skill showcase without progress bars
 
 ---
 
-## 📁 Folder Structure
+## 🌐 Live Demo
 
-```
+🔗 [View Portfolio](https://shalsabilla.my.id)
+
+---
+
+## 📁 Project Structure
+
+```bash
 shalsabilla-portfolio/
 ├── assets/
 │   └── css/
-│       └── main.css          # Global styles, animations, cursor
+│       └── main.css
+│
 ├── components/
-│   ├── AppNav.vue            # Sticky navigation
-│   ├── AppFooter.vue         # Footer
-│   ├── HeroSection.vue       # Landing hero
-│   ├── AboutSection.vue      # About me + traits
-│   ├── ExperienceSection.vue # Vertical timeline
-│   ├── SkillsSection.vue     # Skill categories (no bars)
-│   ├── ProjectsSection.vue   # Project cards
-│   ├── ImageCarousel.vue     # Gallery slider
-│   └── ContactSection.vue    # Contact form + links
+│   ├── AppNav.vue
+│   ├── AppFooter.vue
+│   ├── HeroSection.vue
+│   ├── AboutSection.vue
+│   ├── ExperienceSection.vue
+│   ├── SkillsSection.vue
+│   ├── ProjectsSection.vue
+│   ├── ImageCarousel.vue
+│   └── ContactSection.vue
+│
 ├── pages/
-│   └── index.vue             # Main page
+│   └── index.vue
+│
+├── public/
 ├── nuxt.config.ts
 ├── tailwind.config.js
 └── package.json
-```
-
----
-
-## 🚀 Installation & Running Locally
-
-### Prerequisites
-- Node.js 18+
-- npm or yarn
-
-### Steps
-
-```bash
-# 1. Navigate to project folder
-cd shalsabilla-portfolio
-
-# 2. Install dependencies
-npm install
-
-# 3. Run development server
-npm run dev
-```
-
-Visit **http://localhost:3000** in your browser.
-
-### Build for Production
-
-```bash
-npm run build
-npm run preview
-```
-
-### Static Site (for hosting on Netlify/Vercel)
-
-```bash
-npm run generate
-```
-
-The output will be in the `.output/public` folder.
-
----
-
-## 🖼️ Adding Your Photo
-
-In `HeroSection.vue`, find the portrait placeholder section and replace the `<div>` placeholder with:
-
-```vue
-<img
-  src="/your-photo.jpg"
-  alt="Shalsabilla Wahyu"
-  class="absolute inset-0 w-full h-full object-cover object-center"
-/>
-```
-
-Place your photo in the `/public` folder.
-
----
-
-## 🎨 Customization
-
-| File | What to edit |
-|------|-------------|
-| `HeroSection.vue` | Name, roles, tagline |
-| `AboutSection.vue` | Bio, traits, stats |
-| `ExperienceSection.vue` | Work experience data |
-| `SkillsSection.vue` | Skill categories |
-| `ProjectsSection.vue` | Project cards |
-| `ImageCarousel.vue` | Gallery slides (replace placeholders with `<img>`) |
-| `ContactSection.vue` | Contact links |
-| `tailwind.config.js` | Color tokens |
-| `assets/css/main.css` | Global styles, cursor |
-
----
-
-## 🌐 Deployment
-
-**Vercel (recommended):**
-1. Push to GitHub
-2. Import to Vercel → it auto-detects Nuxt 3
-3. Deploy ✓
-
-**Netlify:**
-- Build command: `npm run generate`
-- Publish directory: `.output/public`
-
----
-
-Built with ♥ by Shalsabilla Wahyu
